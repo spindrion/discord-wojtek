@@ -5,6 +5,11 @@ const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
+var http = require("http");
+setInterval(function() {
+    http.get("http://discord-wojtek.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
+
 
 express()
 .use(express.static(path.join(__dirname, 'public')))
