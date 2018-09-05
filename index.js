@@ -45,18 +45,7 @@ client.on("message", async message => {
   
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-    if(guild.id="424579580020654080"){
-      if(command="drop"){
-        const sayMessage = args.join(" ")
-    if(sayMessage===""){
-    message.channel.send("drop test")}
-    else
-    message.delete();
-
-      }
-
-    }
-    else
+  
 
   if(command==="komendy"){
     const sayMessage = args.join(" ")
